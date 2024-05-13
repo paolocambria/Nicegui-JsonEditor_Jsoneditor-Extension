@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+version = "1.0.0"
+dependencies = ["nicegui"]
+authors = [{name = "Paolo Cambria"}]
+name = "nicejeje"
+description = "Integrated https://github.com/json-editor/json-editor into nicegui and mapped some of its events."
+requires-python = ">= 3.8"
