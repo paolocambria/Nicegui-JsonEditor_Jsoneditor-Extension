@@ -20,7 +20,7 @@ To use this project, follow the steps below:
 1. Import nicejeje JsonSchemaEditor
    ```python
    from nicejeje.jsonschema_editor import JsonSchemaEditor
-   """)
+  ```
 
 2. Import additional required libraries such as Bootstrap, FontAwesome etc..
 
@@ -51,11 +51,10 @@ To use this project, follow the steps below:
    }
    ```
 
-4. Use `JsonSchemaEditor` within a NiceGUI card context with event mappings.
+4. Use `JsonSchemaEditor` within a NiceGUI context with event mappings.
 
    ```python
-   with ui.card():
-       schema1 = JsonSchemaEditor(
+        JsonSchemaEditor(
            settings,
            on_add=lambda e: ui.notify(f'added: {e}'),
            on_switch=lambda e: ui.notify(f'switched: {e}'),
@@ -71,4 +70,6 @@ To use this project, follow the steps below:
    ui.run()
    ```
 
+
+You can find a practical example in `main.py`
 
